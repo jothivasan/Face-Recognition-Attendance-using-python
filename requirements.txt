@@ -1,0 +1,6 @@
+opencv-contrib-python==4.8.1.78
+numpy<2.0
+pandas==2.0.3
+Pillow==10.0.1
+cmake==3.27.2
+dlib==19.24.1
