@@ -117,7 +117,6 @@ class AttendanceSystem:
         # Create tabs
         self.create_attendance_tab()
         self.create_registration_tab()
-        self.create_reports_tab()
         self.create_settings_tab()
 
     def create_attendance_tab(self):
@@ -367,18 +366,6 @@ class AttendanceSystem:
         
         # Load registered students
         self.load_registered_students()
-
-    def create_reports_tab(self):
-        """Create reports and analytics tab"""
-        reports_frame = tk.Frame(self.notebook, bg=self.colors['dark'])
-        self.notebook.add(reports_frame, text="📊 Reports")
-        
-        # Reports content will be implemented
-        tk.Label(reports_frame, 
-                text="📈 Reports & Analytics\n\nComing Soon...", 
-                font=('Arial', 18, 'bold'),
-                bg=self.colors['dark'], 
-                fg=self.colors['text']).pack(expand=True)
 
     def create_settings_tab(self):
         """Create settings tab"""
